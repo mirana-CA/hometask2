@@ -1,0 +1,225 @@
+/* HEADER START  */
+header {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+}
+header nav h2 {
+  font-size: 20px;
+  padding: 10px 20px;
+  color: #fff;
+  cursor: pointer;
+}
+header nav h2:hover {
+  color: hsla(0, 0%, 100%, 0.8);
+}
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+header nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header nav ul li a {
+  font-size: 12px;
+  padding: 10px 20px;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+header nav ul li a:hover {
+  color: hsla(0, 0%, 100%, 0.8);
+}
+
+header nav ul li i {
+  font-size: 18px;
+}
+.responsive_menu {
+  font-size: 16px;
+  font-weight: 800;
+  padding: 10px 18px;
+  color: #343a40;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  display: none;
+}
+@media only screen and (max-width: 1000px) {
+  header {
+    position: static;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  header nav h2 {
+    color: #343a40;
+    font-weight: 900;
+  }
+  header nav h2:hover {
+    color: rgb(0, 0, 0, 0.9);
+  }
+  header nav ul {
+    display: none;
+  }
+  .responsive_menu {
+    display: block;
+  }
+}
+@media only screen and (max-width: 766px) {
+  header {
+    position: static;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+/* HEADER END  */
+.logging_button {
+  color: #0085a1;
+  background-color: #fff;
+  font-size: 14px;
+  font-weight: 800;
+  padding: 15px 25px;
+  letter-spacing: 1px;
+  border: 1px solid #0085a1;
+  cursor: pointer;
+  position: fixed;
+  right: 0;
+  top: 100px;
+  transition-duration: 300ms;
+}
+.logging_button:hover {
+  color: #fff;
+  background-color: #0085a1;
+}
+/* HERO SECTION START  */
+#hero_section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.42),
+      rgba(0, 0, 0, 0.43)
+    ),
+    url("https://sb-clean-blog.startbootstrap.com/assets/img/home-bg.jpg");
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero_section_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 200px 0 200px;
+  text-align: center;
+}
+.hero_section_content h1 {
+  margin-bottom: 8px;
+  font-size: 80px;
+  color: #fff;
+  padding: 0 20px;
+}
+.hero_section_content p {
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: #fff;
+  padding: 0 20px;
+}
+@media only screen and (max-width: 766px) {
+  .hero_section_content h1 {
+    font-size: 50px;
+  }
+}
+/* HERO SECTION END  */
+
+/* PARAGRAPH START  */
+#paragraph {
+  margin: 100px 0 30px;
+}
+.text_containers {
+  max-width: 766px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+.text_containers_item_heading {
+  transition: 200ms;
+  cursor: pointer;
+}
+.text_containers_item_heading:hover {
+  color: #0085a1;
+}
+.text_containers_item_heading h2 {
+  font-size: 36px;
+  margin: 30px 0 10px;
+  font-weight: 800;
+}
+.text_containers_item_heading h3 {
+  font-weight: 300;
+  margin: 0 0 10px;
+  font-size: 28px;
+}
+
+.text_containers_item p {
+  font-size: 18px;
+  font-style: italic;
+  color: #868e96;
+  line-height: 1.5;
+  margin: 0 0 30px;
+  font-family: "Times New Roman", Times, serif;
+}
+@media only screen and (max-width: 766px) {
+  .text_containers_item_heading h2 {
+    font-size: 30px;
+  }
+  .text_containers {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+}
+
+/* PARAGRAPH END  */
+
+/* FOOTER START  */
+footer {
+  padding: 100px 0 65px;
+}
+.footer_icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.footer_icons i {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #212529;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 24px;
+}
+.footer_icons i:hover {
+  background-color: #0085a1;
+}
+footer p {
+  font-family: "Times New Roman", Times, serif;
+  color: #868e96;
+  font-size: 14px;
+  margin-top: 30px;
+  text-align: center;
+}
+/* FOOTER END  */
